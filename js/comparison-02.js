@@ -1,4 +1,15 @@
-let productName = 'Droid';
-let pricePerItem = 2000;
-productName = 'Repair droid';
-pricePerItem += 1500;
+function checkPassword(password) {
+  const ADMIN_PASSWORD = 'jqueryismyjam';
+  // Change code below this line
+
+  let message;
+
+  if (password === ADMIN_PASSWORD) {
+    message = 'Welcome!';
+  } else {
+    message = 'Access denied, wrong password!';
+  }
+
+  return message;
+  // Change code above this line
+}
