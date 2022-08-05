@@ -1,4 +1,4 @@
-const pricePerItem = 3500;
-const orderedQuantity = 4;
-const totalPrice = pricePerItem * orderedQuantity;
-// console.log(totalPrice);
+const fruits = ['apple', 'plum', 'pear', 'orange'];
+for (const i of fruits) {
+  console.log(i);
+}

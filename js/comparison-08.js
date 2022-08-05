@@ -1,6 +1,5 @@
-function add(a, b, c) {
-  console.log(`Addition result equals ${a + b + c}`);
-}
-add(15, 27, 10);
-add(10, 20, 30);
-add(5, 10, 15);
+const fruits = ['apple', 'peach', 'pear', 'banana'];
+const lastElementIndex = fruits.length - 1;
+const lastElement = fruits[lastElementIndex];
+console.log(lastElementIndex);
+console.log(lastElement);

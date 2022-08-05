@@ -1,4 +1,7 @@
-const productName = 'Droid';
-const pricePerItem = 3500;
-
-const message = `You picked ${productName}, price per item is ${pricePerItem} credits`;
+const fruits = ['apple', 'plum', 'pear', 'orange'];
+const firstElement = fruits[0];
+const secondElement = fruits[1];
+const lastElement = fruits[fruits.length - 1];
+console.log(firstElement);
+console.log(secondElement);
+console.log(lastElement);
