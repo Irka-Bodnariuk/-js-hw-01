@@ -1,10 +1,7 @@
-function calculateTotalPrice(orderedQuantity, pricePerItem) {
-  const totalPrice = orderedQuantity * pricePerItem;
-  return;
+function calculateEngravingPrice(message, pricePerWord) {
+  // Change code below this line
+  return message.split(' ').length * pricePerWord;
+  // Change code above this line
 }
-
-calculateTotalPrice(5, 100);
-calculateTotalPrice(8, 60);
-calculateTotalPrice(3, 400);
-calculateTotalPrice(1, 3500);
-calculateTotalPrice(12, 70);
+console.log(calculateEngravingPrice('JavaScript is in my blood', 10));
+console.log(calculateEngravingPrice('JavaScript is in my blood', 20));

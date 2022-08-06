@@ -1,11 +1,12 @@
-function isNumberInRange(start, end, number) {
-  const isInRange = number > start && number < end;
-  // Change this line
-
-  return isInRange;
+function findLongestWord(string) {
+  // Change code below this line
+  const array = string.split(' ');
+  let longWord = array[0];
+  for (let i = 0; i < array.length; i++) {
+    if (longWord.length < array[i].length) {
+      longWord = array[i];
+    }
+  }
+  return longWord;
 }
-
-console.log(isNumberInRange(10, 30, 17));
-console.log(isNumberInRange(10, 30, 5));
-console.log(isNumberInRange(20, 50, 24));
-console.log(isNumberInRange(20, 50, 76));
+console.log(findLongestWord('The quick brown fox jumped over the lazy dog'));

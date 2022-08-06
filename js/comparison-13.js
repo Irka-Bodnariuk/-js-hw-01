@@ -1,10 +1,10 @@
-function isAdult(age) {
-  const passed = age >= 18;
+function slugify(title) {
+  // Change code below this line
+  // const slug =
 
-  return passed;
+  return title.toLowerCase().split(' ').join('-');
+
+  // Change code above this line
 }
-
-console.log(isAdult(20));
-console.log(isAdult(14));
-console.log(isAdult(8));
-console.log(isAdult(37));
+console.log(slugify('Arrays for begginers'));
+console.log(slugify('English for developer'));

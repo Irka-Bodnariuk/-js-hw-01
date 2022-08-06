@@ -1,23 +1,12 @@
-function checkStorage(available, ordered) {
-  let message;
+function getCommonElements(array1, array2) {
   // Change code below this line
-
-  //   if (ordered > available) {
-  //     message = 'Not enough goods in stock!';
-  //   } else {
-  //     message = 'The order is accepted, our manager will contact you';
-  //     }
-
-  message =
-    ordered > available
-      ? 'Not enough goods in stock!'
-      : 'The order is accepted, our manager will contact you';
-
-  // Change code above this line
-  return message;
+  const newArray = [];
+  for (const number of array1) {
+    if (array1.includes(number) && array2.includes(number)) {
+      newArray.push(number);
+    }
+  }
+  return newArray;
 }
-console.log(checkStorage(100, 50)); // "The order is accepted, our manager will contact you"
-console.log(checkStorage(100, 130)); // "Not enough goods in stock!"
-console.log(checkStorage(200, 20)); // "The order is accepted, our manager will contact you"
-console.log(checkStorage(200, 150)); // "The order is accepted, our manager will contact you"
-console.log(checkStorage(150, 180)); // "Not enough goods in stock!"
+console.log(getCommonElements([1, 2, 3], [2, 4]));
+console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));

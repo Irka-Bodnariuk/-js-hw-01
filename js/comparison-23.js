@@ -1,10 +1,13 @@
-function isNumberNotInRange(start, end, number) {
-  const isInRange = number >= start && number <= end;
-  const isNotInRange = !isInRange; // Change this line
-
-  return isNotInRange;
+function filterArray(numbers, value) {
+  // Change code below this line
+  const newNumbers = [];
+  for (let i = 0; i <= numbers.length; i += 1) {
+    if (numbers[i] > value) {
+      newNumbers.push(numbers[i]);
+    }
+  }
+  return newNumbers;
+  // Change code above this line
 }
-console.log(isNumberNotInRange(10, 30, 17));
-console.log(isNumberNotInRange(10, 30, 5));
-console.log(isNumberNotInRange(20, 50, 24));
-console.log(isNumberNotInRange(20, 50, 76));
+console.log(filterArray([1, 2, 3, 4, 5], 3));
+console.log(filterArray([1, 2, 3, 4, 5], 4));

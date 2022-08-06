@@ -1,12 +1,9 @@
-function checkStorage(available, ordered) {
-  let message;
-  if (ordered > available) {
-    message = 'Not enough goods in stock!';
-  } else {
-    message = 'Order is processed, our manager will contact you.';
-  }
-  return message;
-}
+function makeArray(firstArray, secondArray, maxLength) {
+  // Change code below this line
+  const allArray = firstArray.concat(secondArray);
+  // return allArray;
 
-console.log(checkStorage(50, 100));
-console.log(checkStorage(100, 50));
+  return allArray.length > maxLength ? allArray.slice(0, maxLength) : allArray;
+  // Change code above this line
+}
+console.log(makeArray(['Mango', 'Poly'], ['Ajax', 'Chelsea'], 3));

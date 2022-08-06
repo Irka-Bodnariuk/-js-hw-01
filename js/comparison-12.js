@@ -1,8 +1,13 @@
-function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
-  const totalPrice = orderedQuantity * pricePerDroid + deliveryFee;
-  const message = `You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price.`;
-  return message;
+function makeStringFromArray(array, delimeter) {
+  let string;
+  // Change code below this line
+  string = array.join(delimeter);
+  // Change code above this line
+  return string;
 }
-makeOrderMessage(2, 100, 50);
-makeOrderMessage(4, 300, 100);
-makeOrderMessage(10, 70, 200);
+
+console.log(
+  makeStringFromArray(['Mango', 'hurries', 'to', 'the', 'train'], ' ')
+);
+console.log(makeStringFromArray(['M', 'a', 'n', 'g', 'o'], ''));
+console.log(makeStringFromArray(['top', 'picks', 'for', 'you'], '_'));
