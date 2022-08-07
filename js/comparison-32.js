@@ -1,6 +1,11 @@
-function getSubstring(string, length) {
-  const substring = string.slice(0, length); // Change this line
-
-  return substring;
+function includes(array, value) {
+  // Change code below this line
+  for (const num of array) {
+    if (num === value) {
+      return true;
+    }
+  }
+  return false;
+  // Change code above this line
 }
-console.log(getSubstring('Hello world', 3));
+console.log(includes([1, 2, 3, 4, 5], 3));

@@ -1,10 +1,11 @@
-function getNameLength(name) {
-  const message = `Name ${name} is ${name.length} characters long`; // Change this line
+const start = 6;
+const end = 27;
+let number;
 
-  return message;
+for (let i = start; i < end; i += 1) {
+  if (i % 5 === 0) {
+    number = i;
+    break;
+  }
 }
-
-console.log(getNameLength('Poly'));
-console.log(getNameLength('Harambe'));
-console.log(getNameLength('Billy'));
-console.log(getNameLength('Joe'));
+console.log(number);
